@@ -1,0 +1,118 @@
+.about {
+  padding-top: 60px;
+
+  @media screen and (min-width: 767.5px) {
+    padding-top: 100px;
+  }
+}
+
+// .is-hidden {
+// }
+
+.about__container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  // Mobile screen
+  background-image: url(../img/about/about-sm@1x.jpg);
+  // Retina
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/about/about-sm@2x.jpg);
+  }
+
+  // Tablet
+  @media screen and (min-width: 767.5px) {
+    background-image: url(../img/about/about-m@1x.jpg);
+
+    //Retina
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/about/about-m@2x.jpg);
+    }
+  }
+
+  // Desctop
+  @media screen and (min-width: 1279.5px) {
+    background-image: url(../img/about/about-lg@1x.jpg);
+
+    //Retina
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/about/about-lg@2x.jpg);
+    }
+  }
+}
+
+.overlay {
+  background: #fcfcfb;
+  opacity: 0.9;
+  width: 100%;
+  height: 320px;
+
+  @media screen and (min-width: 767.5px) {
+    height: 324px;
+  }
+
+  @media screen and (min-width: 1279.5px) {
+    height: 340px;
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  // @media screen and (min-width: 768px) {
+
+  //     }
+
+  // @media screen and (min-width: 1280px) {
+
+  //     }
+}
+
+// .about__item {
+//     flex-basis: calc((100% - 20px) / 3);
+//     padding: 10px;
+// }
+
+.about__item1::before {
+  display: block;
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/about/suitcase.png');
+}
+
+.about__item2::before {
+  display: block;
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/about/graph.png');
+}
+
+.about__item3::before {
+  display: block;
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/about/house.png');
+}
+
+.about__item4::before {
+  display: block;
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/about/award.png');
+}
